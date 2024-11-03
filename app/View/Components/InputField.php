@@ -8,6 +8,7 @@ use Illuminate\View\Component;
 
 class InputField extends Component
 {
+    public $type;
     public $id;
     public $label;
     public $name;
@@ -19,8 +20,9 @@ class InputField extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct($id, $label, $name, $value = '', $placeholder = '', $required = false, $error = null)
+    public function __construct($type, $id, $label, $name, $value = '', $placeholder = '', $required = false, $error = null)
     {
+        $this->type = $type;
         $this->id = $id;
         $this->label = $label;
         $this->name = $name;

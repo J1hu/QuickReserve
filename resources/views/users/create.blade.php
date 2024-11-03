@@ -14,17 +14,17 @@
         @csrf
         <h2 class="mb-6 text-2xl font-semibold text-gray-800">Create User</h2>
 
-        <x-input-field id="name" label="Name" name="name" placeholder="Your name" required="true"
-            :error="$errors->first('name')" />
+        <x-input-field type='text' id="name" label="Name" name="name" placeholder="Your name"
+            required="true" :error="$errors->first('name')" />
 
-        <x-input-field id="email" label="Email" name="email" placeholder="Ex. john@gmail.com" required="true"
-            :error="$errors->first('email')" />
+        <x-input-field type='email' id="email" label="Email" name="email" placeholder="Ex. john@gmail.com"
+            required="true" :error="$errors->first('email')" />
 
         <x-select-field id="role" label="Role" name="role" :options="['client' => 'client', 'provider' => 'provider']" required="true"
             :error="$errors->first('role')" />
 
-        <x-input-field id="password" label="Password" name="password" placeholder="Your password" required="true"
-            :error="$errors->first('password')" />
+        <x-input-field type='password' id="password" label="Password" name="password" placeholder="Your password"
+            required="true" :error="$errors->first('password')" />
 
         <div class="flex justify-center">
             <button type="submit"
