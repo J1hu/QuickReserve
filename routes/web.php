@@ -25,3 +25,5 @@ Route::get('/dashboard', [AuthController::class, 'showDashboardPage'])->name('sh
 //RESOURCE
 // USERS
 Route::get('/users', [UserController::class, 'showAllUsers'])->name('showAllUsers')->middleware(AuthMiddleware::class);
+Route::get('/users/create', [UserController::class, 'createUser'])->name('createUser')->middleware(AuthMiddleware::class);
+Route::post('/users/store', [UserController::class, 'storeUser'])->name('storeUser')->middleware(AuthMiddleware::class);
