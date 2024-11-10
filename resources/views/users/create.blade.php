@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Create User</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body class="p-6 bg-gray-100">
-    <form action="{{ route('storeUser') }}" method="POST" class="max-w-xl p-8 mx-auto bg-white rounded-lg shadow-md">
+    <form action="{{ route('storeUser') }}" method="POST" class="p-8 mx-auto max-w-xl bg-white rounded-lg shadow-md">
         @csrf
         <h2 class="mb-6 text-2xl font-semibold text-gray-800">Create User</h2>
 
@@ -28,8 +28,8 @@
 
         <div class="flex justify-center">
             <button type="submit"
-                class="w-full py-3 font-semibold text-white rounded-md bg-neutral-900 hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-neutral-900">
-                Create user
+                class="py-3 w-full font-semibold text-white rounded-md bg-neutral-900 hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-neutral-900">
+                Create User
             </button>
         </div>
     </form>
