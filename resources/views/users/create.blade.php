@@ -33,13 +33,6 @@
             </button>
         </div>
     </form>
-
-    {{-- Optional back button --}}
-    {{-- <form action="{{ route('showAllUsers') }}" method="GET">
-        <button type="submit" class="px-4 py-2 mt-4 font-bold text-white bg-gray-500 rounded hover:bg-gray-700 focus:outline-none focus:shadow-outline">
-            Back to Users
-        </button>
-    </form> --}}
 </body>
 
 </html>
